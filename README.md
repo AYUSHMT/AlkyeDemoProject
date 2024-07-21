@@ -66,35 +66,36 @@ You can set it up with Docker and local also - With Docker after clone the repo 
 ```- curl -X GET http://localhost:8000/api/posts/```
 
 ##### Create a Post:
-- curl -X POST http://localhost:8000/api/posts/ -d '{"title": "Post1", "content": "This is the content of the post.", "author":"username"}' -H "Content-Type: application/json" -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"
+```- curl -X POST http://localhost:8000/api/posts/ -d '{"title": "Post1", "content": "This is the content of the post.", "author":"username"}' -H "Content-Type: application/json" -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"```
 
 ##### Get Paginated Posts:
-- curl -X GET http://localhost:8000/api/postPagination/
+```- curl -X GET http://localhost:8000/api/postPagination/
 - curl -X GET "http://localhost:8000/api/postPagination/?page=2"
+```
 
 ##### Get Post Details:
-- curl -X GET http://localhost:8000/api/posts/Post1/
+```- curl -X GET http://localhost:8000/api/posts/Post1/```
 
 ##### Update a Post:
-- curl -X PUT http://localhost:8000/api/posts/Post1/ -d '{"title": "UpdatedPost", "content": "Updated content."}' -H "Content-Type: application/json" -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"
+```- curl -X PUT http://localhost:8000/api/posts/Post1/ -d '{"title": "UpdatedPost", "content": "Updated content."}' -H "Content-Type: application/json" -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"```
 
 ##### Delete a Post:
-- curl -X DELETE http://localhost:8000/api/posts/Post1/ -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"
+```- curl -X DELETE http://localhost:8000/api/posts/Post1/ -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"```
 
 ##### List Comments for a Post:
-- curl -X GET http://localhost:8000/api/posts/Post1/comments/
+```- curl -X GET http://localhost:8000/api/posts/Post1/comments/```
 
 ##### Create a Comment for a Post:
-- curl -X POST http://localhost:8000/api/posts/Post1/comments/ -d '{"text": "This is a comment."}' -H "Content-Type: application/json" -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"
+```- curl -X POST http://localhost:8000/api/posts/Post1/comments/ -d '{"text": "This is a comment."}' -H "Content-Type: application/json" -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"```
 
 ##### Like a Post:
-- curl -X POST http://localhost:8000/api/posts/Post1/like/ -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"
+```- curl -X POST http://localhost:8000/api/posts/Post1/like/ -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"```
 
 ##### Get Token for a User:
-- curl -X POST http://localhost:8000/api/token/ -d '{"username": "newuser", "password": "newpassword", "email": "newuser@example.com"}' -H "Content-Type: application/json"
+```- curl -X POST http://localhost:8000/api/token/ -d '{"username": "newuser", "password": "newpassword", "email": "newuser@example.com"}' -H "Content-Type: application/json"```
 
 ##### Register a User:
-- curl -X POST http://localhost:8000/api/register/ -d '{"username": "newuser", "password": "newpassword", "email": "newuser@example.com"}' -H "Content-Type: application/json" -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"
+```- curl -X POST http://localhost:8000/api/register/ -d '{"username": "newuser", "password": "newpassword", "email": "newuser@example.com"}' -H "Content-Type: application/json" -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"```
 
 
 
