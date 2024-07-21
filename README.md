@@ -63,7 +63,7 @@ You can set it up with Docker and local also - With Docker after clone the repo 
 ### Sample Curl Requests for testing 
 
 ##### List Posts:
-- curl -X GET http://localhost:8000/api/posts/
+```- curl -X GET http://localhost:8000/api/posts/```
 
 ##### Create a Post:
 - curl -X POST http://localhost:8000/api/posts/ -d '{"title": "Post1", "content": "This is the content of the post.", "author":"username"}' -H "Content-Type: application/json" -H "Authorization: Bearer <YOUR_ACCESS_TOKEN>"
